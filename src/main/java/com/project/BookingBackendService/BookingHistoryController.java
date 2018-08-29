@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-@CrossOrigin
+@CrossOrigin(origins = "http://54.255.163.0:9011")
 @RestController
 public class BookingHistoryController {
 	
@@ -147,7 +147,7 @@ public class BookingHistoryController {
         helper.setTo(email);
         
         helper.setText("Click the Link Below to reset the password " + "\n" +
-        "http://localhost:4200/reset/"+uId+"\n\n"
+        "http://54.255.163.0:9011/reset/"+uId+"\n\n"
         +"For Godsake please remember your password");
         
         helper.setSubject("King Flyer Reset Password");
