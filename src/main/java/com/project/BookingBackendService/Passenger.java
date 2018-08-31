@@ -4,13 +4,16 @@ public class Passenger {
 	private String name;
 	private Integer age;
 	private String gender;
+	
 	public Passenger() { }
+	
 	public Passenger(String name, Integer age, String gender) {
 		super();
 		this.name = name;
 		this.age = age;
 		this.gender = gender;
 	}
+	
 	public String getName() {
 		return name;
 	}

@@ -20,7 +20,24 @@ public class BookingHistoryModel {
 	private String day;
 	private List<Passenger> passengers;
 	private Integer amount;
-	
+
+	public BookingHistoryModel() {}
+
+	public BookingHistoryModel(String bookingId, Integer flightNo, String flightName,Integer userNo, String departure, String arrival,
+			String day, List<Passenger> passengers, Integer amount, String time) {
+		super();
+		this.bookingId = bookingId;
+		this.flightNo = flightNo;
+		this.userNo = userNo;
+		this.departure = departure;
+		this.arrival = arrival;
+		this.day = day;
+		this.time = time;
+		this.passengers = passengers;
+		this.flightName = flightName;
+		this.amount = amount;
+	}
+
 	public String getTime() {
 		return time;
 	}
@@ -61,22 +78,7 @@ public class BookingHistoryModel {
 		this.userNo = userNo;
 	}
 
-	public BookingHistoryModel() {}
-	
-	public BookingHistoryModel(String bookingId, Integer flightNo, String flightName,Integer userNo, String departure, String arrival,
-			String day, List<Passenger> passengers, Integer amount, String time) {
-		super();
-		this.bookingId = bookingId;
-		this.flightNo = flightNo;
-		this.userNo = userNo;
-		this.departure = departure;
-		this.arrival = arrival;
-		this.day = day;
-		this.time = time;
-		this.passengers = passengers;
-		this.flightName = flightName;
-		this.amount = amount;
-	}
+
 	public String getBookingId() {
 		return bookingId;
 	}
@@ -116,6 +118,6 @@ public class BookingHistoryModel {
 	public void setDay(String day) {
 		this.day = day;
 	};
-	
+
 
 }
